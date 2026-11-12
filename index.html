@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biscuit the Giga Pet</title>
+    <meta name="description" content="A small virtual pet game built with JavaScript and jQuery">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Meet Biscuit, your Giga Pet</h1>
+      <p class="subtitle">Keep Biscuit happy, healthy, and well rested.</p>
+    </header>
+
+    <main>
+      <!-- Pet picture + speech bubble that shows what the pet says after each action -->
+      <section class="pet-image-container">
+        <div class="speech-bubble" aria-live="polite"></div>
+        <img class="pet-image" src="images/pet.svg" alt="Biscuit, an orange cartoon cat">
+      </section>
+
+      <!-- Stats and action buttons -->
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> purrs (per min)</strong></div>
+        <!-- New stat that goes with the new Nap button -->
+        <div>Energy: <strong><span class="energy"></span> / 100</strong></div>
+        <div class="energy-bar"><div class="energy-fill"></div></div>
+        <div class="mood">Mood: <strong><span class="mood-text"></span></strong></div>
+
+        <div class="button-container">
+          <button class="treat-button">Treat</button>
+          <button class="play-button">Play</button>
+          <button class="exercise-button">Exercise</button>
+          <!-- New action button -->
+          <button class="nap-button">Nap</button>
+        </div>
+
+        <label class="sound-toggle">
+          <input type="checkbox" class="sound-checkbox" checked> Sound effects
+        </label>
+      </section>
+    </main>
+
+    <footer>
+      <p>CIT 384 &middot; Project 2 &middot; Giga Pet JavaScript</p>
+    </footer>
+
+    <!-- jQuery must load before script.js because script.js uses $ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
