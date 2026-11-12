@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Biscuit the cat: an original illustration for this project -->
+  <ellipse cx="100" cy="185" rx="60" ry="8" fill="#000" opacity="0.12"/>
+  <!-- tail -->
+  <path d="M150 160 C190 150 190 100 165 95" stroke="#e8954a" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <!-- body -->
+  <ellipse cx="100" cy="145" rx="55" ry="42" fill="#f4a95c"/>
+  <ellipse cx="100" cy="155" rx="30" ry="25" fill="#fde3c4"/>
+  <!-- ears -->
+  <polygon points="52,60 62,15 92,45" fill="#f4a95c"/>
+  <polygon points="148,60 138,15 108,45" fill="#f4a95c"/>
+  <polygon points="60,52 65,28 82,45" fill="#f7b8c4"/>
+  <polygon points="140,52 135,28 118,45" fill="#f7b8c4"/>
+  <!-- head -->
+  <circle cx="100" cy="75" r="50" fill="#f4a95c"/>
+  <path d="M85 30 L90 45 M100 27 L100 43 M115 30 L110 45" stroke="#e8954a" stroke-width="5" stroke-linecap="round"/>
+  <!-- eyes -->
+  <ellipse cx="80" cy="72" rx="7" ry="10" fill="#2b2b2b"/>
+  <ellipse cx="120" cy="72" rx="7" ry="10" fill="#2b2b2b"/>
+  <circle cx="82" cy="68" r="3" fill="#fff"/>
+  <circle cx="122" cy="68" r="3" fill="#fff"/>
+  <!-- nose and mouth -->
+  <polygon points="95,88 105,88 100,94" fill="#e86f86"/>
+  <path d="M100 94 Q93 102 88 97 M100 94 Q107 102 112 97" stroke="#2b2b2b" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- whiskers -->
+  <path d="M70 90 L40 85 M70 95 L40 98 M130 90 L160 85 M130 95 L160 98" stroke="#2b2b2b" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- cheeks -->
+  <circle cx="68" cy="88" r="7" fill="#f7b8c4" opacity="0.7"/>
+  <circle cx="132" cy="88" r="7" fill="#f7b8c4" opacity="0.7"/>
+</svg>
