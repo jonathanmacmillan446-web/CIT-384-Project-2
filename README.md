@@ -2,7 +2,7 @@
 
 A small virtual pet game built with HTML, CSS, JavaScript, and jQuery. Take care of Biscuit the cat by giving treats, playing, exercising, and napping.
 
-## 🚀 Live Demo
+## Live Demo
 You can view the published website here: [Live Website on GitHub Pages](https://jonathanmacmillan446-web.github.io/CIT-384-Project-2/)
 
 ## Features
