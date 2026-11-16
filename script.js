@@ -16,7 +16,7 @@ $(function() { // Runs once all the DOM elements on the page are ready to be use
 // Object that holds all of the pet's information.
 // "energy" is the new key that goes with the new Nap button.
 var pet_info = {
-  name: "Biscuit",
+  name: "Davey",
   weight: 12,
   happiness: 10,
   energy: 80
