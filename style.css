@@ -1,3 +1,4 @@
+/* Colors match Davey: grey fur, darker tabby grey, green eyes, white muzzle */
 * {
   box-sizing: border-box;
 }
@@ -5,30 +6,30 @@
 body {
   font-family: "Trebuchet MS", helvetica, arial, sans-serif;
   margin: 25px;
-  background-color: #fff8ef;
-  color: #3a2c1f;
+  background-color: #f2f0ed;
+  color: #33302d;
 }
 
 header {
-  border-bottom: 2px solid #f0c899;
+  border-bottom: 2px solid #c9c4be;
 }
 
 h1 {
   font-weight: bold;
-  color: #c4621c;
+  color: #5d7050;
   margin-bottom: 4px;
 }
 
 .subtitle {
   margin-top: 0;
-  color: #7a5b3d;
+  color: #6e6965;
 }
 
 footer {
   clear: both; /* footer goes below the two floated sections */
   padding-top: 15px;
-  border-top: 2px solid #f0c899;
-  color: #7a5b3d;
+  border-top: 2px solid #c9c4be;
+  color: #6e6965;
   font-size: 14px;
 }
 
@@ -45,7 +46,7 @@ footer {
   margin-bottom: 20px;
   padding: 10px;
   background-color: #ffffff;
-  border: 2px solid #c4621c;
+  border: 2px solid #5d7050;
   font-weight: bold;
 }
 
@@ -63,7 +64,7 @@ footer {
   margin-top: 10px;
   margin-bottom: 25px;
   background-color: #ffffff;
-  border: 2px solid #f0c899;
+  border: 2px solid #c9c4be;
 }
 
 .stat {
@@ -74,16 +75,16 @@ footer {
   width: 100%;
   height: 12px;
   margin-bottom: 8px;
-  background-color: #f0e2d0;
+  background-color: #dcd8d3;
 }
 
 .energy-fill {
   width: 100%;
   height: 12px;
-  background-color: #6cbf5a;
+  background-color: #8a9a74;
 }
 
-/* ---------- Buttons ---------- */
+/* ---------- Buttons: grey like Davey's fur, green like his eyes ---------- */
 .button-container {
   margin-top: 20px;
 }
@@ -96,11 +97,13 @@ footer {
   padding: 8px 0;
   font-size: 15px;
   color: #ffffff;
-  background-color: #c4621c;
+  background-color: #6e6965;
   border: none;
+  border-bottom: 4px solid #8a9a74;
   cursor: pointer;
 }
 
 .button-container button:hover {
-  background-color: #a14e14;
+  background-color: #5d7050;
+  border-bottom-color: #4f4a46;
 }
