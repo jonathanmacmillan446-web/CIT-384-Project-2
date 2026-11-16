@@ -105,5 +105,5 @@ footer {
 
 .button-container button:hover {
   background-color: #5d7050;
-  border-bottom-color: #4f4a46;
+  border-bottom: 4px solid #4f4a46;
 }
