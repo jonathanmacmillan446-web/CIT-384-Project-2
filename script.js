@@ -16,7 +16,7 @@ $(function() { // Runs once all the DOM elements on the page are ready to be use
 // Object that holds all of the pet's information.
 // "energy" is the new key that goes with the new Nap button.
 var pet_info = {
-  name: "Davey",
+  name: "Jim",
   weight: 12,
   happiness: 10,
   energy: 80
@@ -24,11 +24,11 @@ var pet_info = {
 
 // Each action has an array of 3 comments. The pet says the next one each time.
 var petComments = {
-  treat:    ["Yum! More please!", "Crunchy and delicious!", "You're the best, human!"],
-  play:     ["Wheee! Chase the string!", "Again, again!", "That was so fun!"],
-  exercise: ["Huff... puff... okay, I'm working on it.", "Do I HAVE to?", "Feeling the burn..."],
-  nap:      ["Zzz... five more minutes...", "*curls up in a sunny spot*", "Ahh, I feel recharged!"],
-  tired:    ["I'm way too tired. Can I take a nap first?", "*yawns* No energy left...", "Nap time first, please."]
+  treat:    ["Protein fish! Gains!", "Chomp chomp chomp!", "You're the best, spotter!"],
+  play:     ["Wheee! Shark zoomies!", "Again, again!", "That was fin-tastic!"],
+  exercise: ["Huff... puff... one more rep...", "Leg day? I don't even HAVE legs!", "Feeling the burn..."],
+  nap:      ["Zzz... five more minutes...", "*floats gently at the bottom of the tank*", "Ahh, I feel recharged!"],
+  tired:    ["I'm way too tired. Can I take a nap first?", "*yawns* No energy left...", "Rest day first, please."]
 };
 
 // Keeps track of which comment (index 0, 1, or 2) to use next
@@ -113,7 +113,11 @@ function updatePetInfoInHtml() {
    * Here it grows or shrinks the green energy bar to the new energy
    * percentage over 400 milliseconds, instead of jumping there instantly.
    */
-  $('.energy-fill').animate({ width: pet_info.energy + '%' }, 400);
+  $('.energy-fill')                          // 1. select the green bar inside the energy meter
+    .animate(                                // 2. start a smooth animation on it
+      { width: pet_info.energy + '%' },      // 3. WHAT to change: the width, to the energy value (e.g. 65 -> "65%")
+      400                                    // 4. HOW LONG it takes: 400 milliseconds (0.4 seconds)
+    );
 }
 
 // Picks a mood word based on the pet's current stats.
@@ -159,7 +163,14 @@ function hopPet(height) {
    * and only then does the second .animate() bring it back down.
    * Without .delay(), the pet would start falling the instant it got to the top.
    */
-  $('.pet-image').animate({ top: height }, 150)
-                 .delay(200)
-                 .animate({ top: '0px' }, 150);
+  // These three steps are "chained" together, so jQuery runs them in order, one after another.
+  $('.pet-image')                            // select the pet picture
+    .animate({ top: height }, 150)           // STEP 1: move UP (a negative top, like '-40px') in 150 ms
+    .delay(200)                              // STEP 2: wait in the air for 200 ms before the next step
+    .animate({ top: '0px' }, 150);           // STEP 3: move back DOWN to its normal spot (top: 0px) in 150 ms
+
+  // The height comes from the button that was clicked:
+  //   Treat    -> hopPet('-15px')  small hop
+  //   Exercise -> hopPet('-25px')  medium hop
+  //   Play     -> hopPet('-40px')  big hop
 }
